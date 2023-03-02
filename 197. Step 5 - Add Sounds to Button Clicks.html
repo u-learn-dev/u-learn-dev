@@ -1,1 +1,44 @@
-<div class="text-viewer--scroll-container--1iy0Z"><div class="text-viewer--content--3hoqQ"><div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">ნაბიჯი 5 - ბათონ ქლიქებს დაუმატეთ ხმები</div><div class="article-asset--container--3djM8"><div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="article-asset--content--1dAQ9 rt-scaffolding"><p>1. იგივე გზით როგორც ჩვენ  <code>nextSequence() -ში </code> , როდესაც იუზერი <strong>აქლიქებს ღილაკზე,</strong>, შესაბამისი ხმა ჩაირთვება. მაგალითად. თუ მწვანე ბათონზე დააქლიქებენ, შემდეგ  green.mp3 უნდა ჩაირთოს. </p><p>2. შექმენით ახალი ფუნქცია სახელად <code>playSound()</code>რომელიც ერთ <strong>ინფუთ </strong> პარამეტრს მიიღებს  სახელად <code>name</code>.</p><p>3. აიღეთ ის კოდი რომელიც გამოვიყენეთ ხმის ჩასართავად  <code>nextSequence()</code>ფუნქციაში და გადაიტანეთ <code>playSound()</code>-ში .</p><p>4. გაუკეთეთ Refactor-ი  კოდს playSound()-ში ისე რომ ხმის ჩართვამ იმუშაოს დააქლიქებს ღილაკს. <code>nextSequence()</code>-შიც და მაშინაც როდესაც იუზერი <strong>დააქლიქებს ღილაკს</strong>. </p></div></div></div></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            ნაბიჯი 5 - ბათონ ქლიქებს დაუმატეთ ხმები
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+            >
+              <p>
+                1. იგივე გზით როგორც ჩვენ <code>nextSequence() -ში </code> , როდესაც იუზერი
+                <strong>აქლიქებს ღილაკზე,</strong>, შესაბამისი ხმა ჩაირთვება. მაგალითად. თუ მწვანე ბათონზე
+                დააქლიქებენ, შემდეგ green.mp3 უნდა ჩაირთოს.
+              </p>
+              <p>
+                2. შექმენით ახალი ფუნქცია სახელად <code>playSound()</code>რომელიც ერთ
+                <strong>ინფუთ </strong> პარამეტრს მიიღებს სახელად <code>name</code>.
+              </p>
+              <p>
+                3. აიღეთ ის კოდი რომელიც გამოვიყენეთ ხმის ჩასართავად <code>nextSequence()</code>ფუნქციაში და
+                გადაიტანეთ <code>playSound()</code>-ში .
+              </p>
+              <p>
+                4. გაუკეთეთ Refactor-ი კოდს playSound()-ში ისე რომ ხმის ჩართვამ იმუშაოს დააქლიქებს ღილაკს.
+                <code>nextSequence()</code>-შიც და მაშინაც როდესაც იუზერი <strong>დააქლიქებს ღილაკს</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

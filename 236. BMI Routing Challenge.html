@@ -1,19 +1,60 @@
-<div class="text-viewer--scroll-container--1iy0Z">
-<div class="text-viewer--content--3hoqQ">
-<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">BMI როუთინგის გამოწვევა</div>
-<div class="article-asset--container--3djM8">
-<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p>ჩვენს წინა BMI კალკულატორის კოდი, რომელიც წინაზე დავწერეთ უნდა გადავაქცოთ რეალურ ვებსაიტად, იმის გამოყენებით რაც ამ მოდულში ვისწავლეთ. მიჰყევით ქვემოთ მოცემულ ნაბიჯებს ამ გამოწვევის შესასრულებლად:</p>
-<p>1. შექმენით ფაილი სახელად <strong>bmiCalculator.html</strong> წინა გამოწვევიდან, Calculator საქაღალდეში &nbsp;</p>
-<p>2. დაამატეთ <strong>HTML boilerplate-ი </strong> და გვერდს სათაურად დაარქვით BMI Calculator-ი</p>
-<p>3. დაამატეთ <strong>HTML form</strong>, ეს ფორმა გააკეთებს <strong>შემდეგ მოთხოვნას&nbsp;</strong>ჩვენი სერვერის როუთზე <code>/bmicalculator</code>. ამ ფორმას ექნება 2 ინფუთი, წონა და სიმაღლე ჩასანაცვლებელი ტექსტით, რომელიც მომხმარბელს ეტყვის თუ რა უნდა ჩაწერონ ტექსტურ ველში.&nbsp;</p>
-<p>4. დაამატეთ ბათონი სახელად &ldquo;Caculate BMI&rdquo;</p>
-<p>5.დაამატეთ get და post მეთოდები <code>/bmicalculator ამ როუტზე</code>,&nbsp; server.js ფაილში, რომელსაც ვიყენებდით.</p>
-<p>6. გამოიყენეთ sendFile() რათა, გადაგზავნოთ&nbsp;<strong>bmiCalculator.html </strong>გვერდი get მეთოდის რისფონსად (პასუხად).</p>
-<p>6. დაამატეთ h1 ტექსტით -&nbsp;<strong>BMI Calculator</strong></p>
-<p>7. server.js-ის შიგნით, შექმენით 2 ცვლადი, ერთი წონისთვის ერთი სიმაღლისთვის.&nbsp;</p>
-<p>8. გამოიყენეთ BMI კალკულატორის კოდი რომელიც წინაზე დაწერეთ, ან დაწერეთ რაიმე ახალი კოდი რათა დაიანგაროშოთ და უკან გააგზავნოთ შედეგი, როგროც ტექსტი. ის უნდა იკითხებოდეს ისე როგორც : "Your BMI is <strong>n</strong>" სადაც n უდრის გამოთვლილ BMI-ს, რომელიც წონასა და სიმაღლის ინფუთებზეა დამოკიდებული.</p>
-</div>
-</div>
-</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">BMI როუთინგის გამოწვევა</div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <p>
+                ჩვენს წინა BMI კალკულატორის კოდი, რომელიც წინაზე დავწერეთ უნდა გადავაქცოთ რეალურ ვებსაიტად,
+                იმის გამოყენებით რაც ამ მოდულში ვისწავლეთ. მიჰყევით ქვემოთ მოცემულ ნაბიჯებს ამ გამოწვევის
+                შესასრულებლად:
+              </p>
+              <p>
+                1. შექმენით ფაილი სახელად <strong>bmiCalculator.html</strong> წინა გამოწვევიდან, Calculator
+                საქაღალდეში &nbsp;
+              </p>
+              <p>
+                2. დაამატეთ <strong>HTML boilerplate-ი </strong> და გვერდს სათაურად დაარქვით BMI Calculator-ი
+              </p>
+              <p>
+                3. დაამატეთ <strong>HTML form</strong>, ეს ფორმა გააკეთებს
+                <strong>შემდეგ მოთხოვნას&nbsp;</strong>ჩვენი სერვერის როუთზე <code>/bmicalculator</code>. ამ
+                ფორმას ექნება 2 ინფუთი, წონა და სიმაღლე ჩასანაცვლებელი ტექსტით, რომელიც მომხმარბელს ეტყვის თუ
+                რა უნდა ჩაწერონ ტექსტურ ველში.&nbsp;
+              </p>
+              <p>4. დაამატეთ ბათონი სახელად &ldquo;Caculate BMI&rdquo;</p>
+              <p>
+                5.დაამატეთ get და post მეთოდები <code>/bmicalculator ამ როუტზე</code>,&nbsp; server.js ფაილში,
+                რომელსაც ვიყენებდით.
+              </p>
+              <p>
+                6. გამოიყენეთ sendFile() რათა, გადაგზავნოთ&nbsp;<strong>bmiCalculator.html </strong>გვერდი get
+                მეთოდის რისფონსად (პასუხად).
+              </p>
+              <p>6. დაამატეთ h1 ტექსტით -&nbsp;<strong>BMI Calculator</strong></p>
+              <p>7. server.js-ის შიგნით, შექმენით 2 ცვლადი, ერთი წონისთვის ერთი სიმაღლისთვის.&nbsp;</p>
+              <p>
+                8. გამოიყენეთ BMI კალკულატორის კოდი რომელიც წინაზე დაწერეთ, ან დაწერეთ რაიმე ახალი კოდი რათა
+                დაიანგაროშოთ და უკან გააგზავნოთ შედეგი, როგროც ტექსტი. ის უნდა იკითხებოდეს ისე როგორც : "Your
+                BMI is <strong>n</strong>" სადაც n უდრის გამოთვლილ BMI-ს, რომელიც წონასა და სიმაღლის
+                ინფუთებზეა დამოკიდებული.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,53 +1,131 @@
-<div class="text-viewer--scroll-container--1iy0Z">
-<div class="text-viewer--content--3hoqQ">
-<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">ნაბიჯი 2 - შექმენით ახალი სტრუქტურა </div>
-<div class="article-asset--container--3djM8">
-<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p>1.  <strong>game.js</strong> -ის შიგნით შექმენით <strong>ახალი ფუნქცია</strong> სახელად <code>nextSequence()</code></p>
-<p>2. <strong></strong> ახალი ფუნქციის შიგნით დააგენერირეთ ახალი <strong>რენდომ ნომერი </strong> <strong>0-სა </strong> და <strong>3-ს </strong> შორის  და მოათავსეთ ის <strong>ცვლადში </strong> სახელად <code>randomNumber</code></p>
-<p> შეგიძლიათ გამოიყენოთ ქრომის კონსოლი რათა შეამოწმოთ რომ თქვენი ქმნის რენდომ რიცხვს სწორ არეში..</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_10-29-46-f35b1b67fdc733fee6b115ffa13d6930.png" width="259" height="207" align="middle" /></figure>
-<p>3. <strong>game.js </strong>ფაილის ზემოდან, შექმენით ახალი <strong>array</strong> სახელად <code>buttonColours</code> და მიაწოდეთ შემდეგი თანმიმდევრობა  <code>"red", "blue", "green", "yellow"</code> .</p>
-<p>4.  შექმენით ახალი ცვლადი სახელად <code>randomChosenColour</code> და გამოიყენეთ <code>randomNumber</code>  ნაბიჯი 2-დან რათა აირჩიოთ რენდომ ფერი <code>buttonColours</code> array-დან.</p>
-<p>5. <strong>game.js </strong>ფაილის ზემოდან, შექმენით ცარიელი array სახელად <code>gamePattern</code>.</p>
-<p>6. დაამატეთ ახალი <code>randomChosenColour</code>  დაგენერირებული მეოთხე საფეხურზე  <code>gamePattern</code>-ის ბოლოში.</p>
-<p>&nbsp;</p>
-<p>შენიშვნა: თუ რაიმე მინიშნება დაგჭირდებათ, სცადეთ ქვევით ჩამოსქროლვა. 👇</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p> მინიშნება 1: დაიმახსოვეთ ასე ქმნით და იძახებთ ფუნქციებს ჯავასკრიპტში:</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-49-16-dbc2029ddafc91ff42f957991183f40f.png" align="middle" /></figure>
-<p>&nbsp;</p>
-<p> მინიშნება 2A: დაიმახსოვრეთ ასე აგენერირებთ რენდომ რიცხვებს 0 დან 0.9999... -მდე</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-54-49-dac0c523ff494299585241f4f0f9f9c5.png" align="middle" /></figure>
-<p>მინიშნება 2B. დაიმახსოვრეთ ასე ამრგვალებთ რიცხვს.</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-56-32-94e4bcb5449f8685596a9d5140b3c55d.png" align="middle" /></figure>
-<p>მინიშნება 3. დაიმახსოვრეთ ასე იქმნება arrays ჯავასკრიპტში:</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-59-38-052565b0de9dc8cec5d67ab8a7a84053.png" align="middle" /></figure>
-<p>მინიშნება 4. დაიმახსოვრეთ ამგავარ ირჩევთ arrays -შიგნით აითემებს:</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_11-20-00-0f9c30930f660a2a95faa6975cd75a68.png" align="middle" /></figure>
-<p>მინიშნება 6. დაიმახსოვრეთ ასე ამატებთ აითემებს array-ში:</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_11-17-26-1e31d6dbe809a3cf701896e4e93c8983.png" align="middle" /></figure>
-</div>
-</div>
-</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            ნაბიჯი 2 - შექმენით ახალი სტრუქტურა
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <p>
+                1. <strong>game.js</strong> -ის შიგნით შექმენით <strong>ახალი ფუნქცია</strong> სახელად
+                <code>nextSequence()</code>
+              </p>
+              <p>
+                2. <strong></strong> ახალი ფუნქციის შიგნით დააგენერირეთ ახალი <strong>რენდომ ნომერი </strong>
+                <strong>0-სა </strong> და <strong>3-ს </strong> შორის და მოათავსეთ ის
+                <strong>ცვლადში </strong> სახელად <code>randomNumber</code>
+              </p>
+              <p>
+                შეგიძლიათ გამოიყენოთ ქრომის კონსოლი რათა შეამოწმოთ რომ თქვენი ქმნის რენდომ რიცხვს სწორ არეში..
+              </p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_10-29-46-f35b1b67fdc733fee6b115ffa13d6930.png"
+                  width="259"
+                  height="207"
+                  align="middle"
+                />
+              </figure>
+              <p>
+                3. <strong>game.js </strong>ფაილის ზემოდან, შექმენით ახალი <strong>array</strong> სახელად
+                <code>buttonColours</code> და მიაწოდეთ შემდეგი თანმიმდევრობა
+                <code>"red", "blue", "green", "yellow"</code> .
+              </p>
+              <p>
+                4. შექმენით ახალი ცვლადი სახელად <code>randomChosenColour</code> და გამოიყენეთ
+                <code>randomNumber</code> ნაბიჯი 2-დან რათა აირჩიოთ რენდომ ფერი
+                <code>buttonColours</code> array-დან.
+              </p>
+              <p>
+                5. <strong>game.js </strong>ფაილის ზემოდან, შექმენით ცარიელი array სახელად
+                <code>gamePattern</code>.
+              </p>
+              <p>
+                6. დაამატეთ ახალი <code>randomChosenColour</code> დაგენერირებული მეოთხე საფეხურზე
+                <code>gamePattern</code>-ის ბოლოში.
+              </p>
+              <p>&nbsp;</p>
+              <p>შენიშვნა: თუ რაიმე მინიშნება დაგჭირდებათ, სცადეთ ქვევით ჩამოსქროლვა. 👇</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>მინიშნება 1: დაიმახსოვეთ ასე ქმნით და იძახებთ ფუნქციებს ჯავასკრიპტში:</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-49-16-dbc2029ddafc91ff42f957991183f40f.png"
+                  align="middle"
+                />
+              </figure>
+              <p>&nbsp;</p>
+              <p>მინიშნება 2A: დაიმახსოვრეთ ასე აგენერირებთ რენდომ რიცხვებს 0 დან 0.9999... -მდე</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-54-49-dac0c523ff494299585241f4f0f9f9c5.png"
+                  align="middle"
+                />
+              </figure>
+              <p>მინიშნება 2B. დაიმახსოვრეთ ასე ამრგვალებთ რიცხვს.</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-56-32-94e4bcb5449f8685596a9d5140b3c55d.png"
+                  align="middle"
+                />
+              </figure>
+              <p>მინიშნება 3. დაიმახსოვრეთ ასე იქმნება arrays ჯავასკრიპტში:</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_10-59-38-052565b0de9dc8cec5d67ab8a7a84053.png"
+                  align="middle"
+                />
+              </figure>
+              <p>მინიშნება 4. დაიმახსოვრეთ ამგავარ ირჩევთ arrays -შიგნით აითემებს:</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_11-20-00-0f9c30930f660a2a95faa6975cd75a68.png"
+                  align="middle"
+                />
+              </figure>
+              <p>მინიშნება 6. დაიმახსოვრეთ ასე ამატებთ აითემებს array-ში:</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-21_11-17-26-1e31d6dbe809a3cf701896e4e93c8983.png"
+                  align="middle"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

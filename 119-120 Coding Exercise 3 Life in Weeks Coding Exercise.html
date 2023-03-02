@@ -1,44 +1,93 @@
-<div class="instructions--instructions---q1NT">
-<div class="instructions--content--1JI0g" data-purpose="instructions-content">
-<div class="ud-heading-xl instructions--title--3vSDk" data-purpose="exercise-title">"ცხოვრება კვირებში", კოდინგის გამოწვევა</div>
-<div class="ud-text-sm rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p>მე ვკითხულობდი ამ სტატიას <a href="https://waitbutwhy.com/2014/05/life-weeks.html">Tim Urban - Your Life in Weeks</a> და გავიაზრე თუ რამდენად მოკლე ადამიანის ცხოვრება.</p>
-<p>ამ გამოწვევაში, თქვენ უნდა შექმნათ ფუნქცია რომელიც გეტყვით რამდენი დღე, კვირა და თვე გვაქვს დარჩენილი თუ 90 წლამდე ვიცოცხლებთ.</p>
-<p>&nbsp;</p>
-<p>ის მიიღებს თქვენს ამჟამინდელ ასაკს როგორც ინფუთს, ანუ თქვენს ასაკს გადასცემთ&nbsp; არგუმენტად(პარამეტრად) და console.logs ის საშუალებით დაწერს თუ რამდენი დრო დაგვრჩა ამ ფორმატში:</p>
-<p><em>თქვენ გაქვთ x დღე, y კვირა, და z თვე დარჩენილი.</em></p>
-<p>სადაც x, y და z ჩანაცვლდება რეალურად გამოთვლილი რიცხვებით.</p>
-<p>&nbsp;</p>
-<p>სიმარტივისთვის, დაუშვით რომ წელიწადში არის <strong>365&nbsp;</strong>დღე /&nbsp;<strong>52</strong> კვირა /&nbsp;<strong>12</strong> თვე.</p>
-<p>&nbsp;</p>
-<p><strong>მნიშვნელოვანია,</strong>&nbsp;რომ თქვენი<strong> console.log-ის </strong> აუთფუთი ემთხვეოდეს აუთფუთის ნიმუშის ფორმატს ზუსტად, მძიმისა და წერტილების პოზიციებიც კი.</p>
-<p><strong>ინფუთის ნიმუში</strong></p>
-<p>მაგალითად თუ ხართ 56 წლის:</p>
-<div class="ud-component--base-components--code-block">
-<div>
-<ol class="linenums">
-<li class="L0"><span class="pln">lifeInWeeks</span><span class="pun">(</span><span class="lit">56</span><span class="pun">)</span></li>
-</ol>
-</div>
-</div>
-<p><strong>აუთფუთის ნიმუში</strong></p>
-<div class="ud-component--base-components--code-block">
-<div>
-<ol class="linenums">
-<li class="L0"><span class="pln">თქვენ გაქვთ&nbsp;</span><span class="lit">12410</span><span class="pln"> დღე</span><span class="pun">,</span> <span class="lit">1768</span><span class="pln"> კვირა</span><span class="pun">,</span> <span class="kwd">და</span> <span class="lit">408</span><span class="pln"> თვე დარჩენილი</span><span class="pun">.</span></li>
-</ol>
-</div>
-</div>
-<p><strong>მინიშნება</strong></p>
-<ol>
-<li>
-<p>სცადეთ <a href="https://repl.it/@appbrewery/Age-In-Weeks-Challenge">ამ Repl.it playground-ის</a> გამოყენება, რათა დატესტოთ თქვენი კოდი და ნახოთ თქვენი აუთფუთი არის თუ არა ის რასაც მოელოდით.</p>
-</li>
-<li>
-<p>დარწმუნდით რომ აუთფუთი ემთხვევა აუთფუთის ნიმუშს სრულიად. იგივენაირი გამოტოვებებით, მძიმეებითა და წერტილებით.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="instructions--drag-handle--ocDGT">&nbsp;</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="instructions--instructions---q1NT">
+        <div class="instructions--content--1JI0g" data-purpose="instructions-content">
+          <div class="ud-heading-xl instructions--title--3vSDk" data-purpose="exercise-title">
+            "ცხოვრება კვირებში", კოდინგის გამოწვევა
+          </div>
+          <div class="ud-text-sm rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
+            <p>
+              მე ვკითხულობდი ამ სტატიას
+              <a href="https://waitbutwhy.com/2014/05/life-weeks.html">Tim Urban - Your Life in Weeks</a> და
+              გავიაზრე თუ რამდენად მოკლე ადამიანის ცხოვრება.
+            </p>
+            <p>
+              ამ გამოწვევაში, თქვენ უნდა შექმნათ ფუნქცია რომელიც გეტყვით რამდენი დღე, კვირა და თვე გვაქვს
+              დარჩენილი თუ 90 წლამდე ვიცოცხლებთ.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              ის მიიღებს თქვენს ამჟამინდელ ასაკს როგორც ინფუთს, ანუ თქვენს ასაკს გადასცემთ&nbsp;
+              არგუმენტად(პარამეტრად) და console.logs ის საშუალებით დაწერს თუ რამდენი დრო დაგვრჩა ამ ფორმატში:
+            </p>
+            <p><em>თქვენ გაქვთ x დღე, y კვირა, და z თვე დარჩენილი.</em></p>
+            <p>სადაც x, y და z ჩანაცვლდება რეალურად გამოთვლილი რიცხვებით.</p>
+            <p>&nbsp;</p>
+            <p>
+              სიმარტივისთვის, დაუშვით რომ წელიწადში არის <strong>365&nbsp;</strong>დღე /&nbsp;<strong
+                >52</strong
+              >
+              კვირა /&nbsp;<strong>12</strong> თვე.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              <strong>მნიშვნელოვანია,</strong>&nbsp;რომ თქვენი<strong> console.log-ის </strong> აუთფუთი
+              ემთხვეოდეს აუთფუთის ნიმუშის ფორმატს ზუსტად, მძიმისა და წერტილების პოზიციებიც კი.
+            </p>
+            <p><strong>ინფუთის ნიმუში</strong></p>
+            <p>მაგალითად თუ ხართ 56 წლის:</p>
+            <div class="ud-component--base-components--code-block">
+              <div>
+                <ol class="linenums">
+                  <li class="L0">
+                    <span class="pln">lifeInWeeks</span><span class="pun">(</span><span class="lit">56</span
+                    ><span class="pun">)</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <p><strong>აუთფუთის ნიმუში</strong></p>
+            <div class="ud-component--base-components--code-block">
+              <div>
+                <ol class="linenums">
+                  <li class="L0">
+                    <span class="pln">თქვენ გაქვთ&nbsp;</span><span class="lit">12410</span
+                    ><span class="pln"> დღე</span><span class="pun">,</span> <span class="lit">1768</span
+                    ><span class="pln"> კვირა</span><span class="pun">,</span> <span class="kwd">და</span>
+                    <span class="lit">408</span><span class="pln"> თვე დარჩენილი</span
+                    ><span class="pun">.</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <p><strong>მინიშნება</strong></p>
+            <ol>
+              <li>
+                <p>
+                  სცადეთ
+                  <a href="https://repl.it/@appbrewery/Age-In-Weeks-Challenge">ამ Repl.it playground-ის</a>
+                  გამოყენება, რათა დატესტოთ თქვენი კოდი და ნახოთ თქვენი აუთფუთი არის თუ არა ის რასაც მოელოდით.
+                </p>
+              </li>
+              <li>
+                <p>
+                  დარწმუნდით რომ აუთფუთი ემთხვევა აუთფუთის ნიმუშს სრულიად. იგივენაირი გამოტოვებებით,
+                  მძიმეებითა და წერტილებით.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="instructions--drag-handle--ocDGT">&nbsp;</div>
+      </div>
+    </div>
+  </body>
+</html>

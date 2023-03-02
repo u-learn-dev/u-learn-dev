@@ -1,44 +1,157 @@
-ქერელ ჭადრაკის დაფის გამოსავალი.
-ეს არის Karel Check Board გამოწვევის ერთ-ერთი ამოხსნა, ბევრი გზა არსებობს ამის გასაკეთებლად, მთავარია პატერნი სწორად გქონდეთ დაჭერილი.
-function main(){
-   beepersRight();
-   goUpTurnLeft();
-   beepersLeft();
-   goUpTurnRight();
-      beepersRight();
-   goUpTurnLeft();
-   beepersLeft();
-   goUpTurnRight();
-      beepersRight();
-}
- 
-function goUpTurnRight() {
-   turnRight();
-   move();
-   turnRight();
-}
- 
-function goUpTurnLeft() {
-   turnLeft();
-   move();
-   turnLeft();
-}
- 
-function beepersRight() {
-   putBeeper();
-   move();
-   move();
-   putBeeper();
-   move();
-   move();
-   putBeeper();  
-}
- 
-function beepersLeft() {
-   move();
-   putBeeper();
-   move();
-   move();
-   putBeeper();
-   move();
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            <div>
+              <div>Karel Check Board გამოსავალი.</div>
+            </div>
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <div>
+                <div>
+                  ეს არის Karel Check Board გამოწვევის ერთ-ერთი ამოხსნა, ბევრი გზა არსებობს ამის გასაკეთებლად,
+                  მთავარია პატერნი სწორად გქონდეთ დაჭერილი.
+                </div>
+              </div>
+              <div class="ud-component--base-components--code-block">
+                <div>
+                  <ol class="linenums">
+                    <li class="L0">
+                      <span class="kwd">function</span><span class="pln"> main</span
+                      ><span class="pun">(){</span>
+                    </li>
+                    <li class="L1">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;beepersRight</span><span class="pun">();</span>
+                    </li>
+                    <li class="L2">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;goUpTurnLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L3">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;beepersLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L4">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;goUpTurnRight</span><span class="pun">();</span>
+                    </li>
+                    <li class="L5">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beepersRight</span
+                      ><span class="pun">();</span>
+                    </li>
+                    <li class="L6">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;goUpTurnLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L7">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;beepersLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L8">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;goUpTurnRight</span><span class="pun">();</span>
+                    </li>
+                    <li class="L9">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beepersRight</span
+                      ><span class="pun">();</span>
+                    </li>
+                    <li class="L0"><span class="pun">}</span></li>
+                    <li class="L1"><span class="pln">&nbsp;</span></li>
+                    <li class="L2">
+                      <span class="kwd">function</span><span class="pln"> goUpTurnRight</span
+                      ><span class="pun">()</span> <span class="pun">{</span>
+                    </li>
+                    <li class="L3">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;turnRight</span><span class="pun">();</span>
+                    </li>
+                    <li class="L4">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L5">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;turnRight</span><span class="pun">();</span>
+                    </li>
+                    <li class="L6"><span class="pun">}</span></li>
+                    <li class="L7"><span class="pln">&nbsp;</span></li>
+                    <li class="L8">
+                      <span class="kwd">function</span><span class="pln"> goUpTurnLeft</span
+                      ><span class="pun">()</span> <span class="pun">{</span>
+                    </li>
+                    <li class="L9">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;turnLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L0">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L1">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;turnLeft</span><span class="pun">();</span>
+                    </li>
+                    <li class="L2"><span class="pun">}</span></li>
+                    <li class="L3"><span class="pln">&nbsp;</span></li>
+                    <li class="L4">
+                      <span class="kwd">function</span><span class="pln"> beepersRight</span
+                      ><span class="pun">()</span> <span class="pun">{</span>
+                    </li>
+                    <li class="L5">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;putBeeper</span><span class="pun">();</span>
+                    </li>
+                    <li class="L6">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L7">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L8">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;putBeeper</span><span class="pun">();</span>
+                    </li>
+                    <li class="L9">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L0">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L1">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;putBeeper</span><span class="pun">();</span
+                      ><span class="pln"> &nbsp;</span>
+                    </li>
+                    <li class="L2"><span class="pun">}</span></li>
+                    <li class="L3"><span class="pln">&nbsp;</span></li>
+                    <li class="L4">
+                      <span class="kwd">function</span><span class="pln"> beepersLeft</span
+                      ><span class="pun">()</span> <span class="pun">{</span>
+                    </li>
+                    <li class="L5">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L6">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;putBeeper</span><span class="pun">();</span>
+                    </li>
+                    <li class="L7">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L8">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L9">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;putBeeper</span><span class="pun">();</span>
+                    </li>
+                    <li class="L0">
+                      <span class="pln">&nbsp;&nbsp;&nbsp;move</span><span class="pun">();</span>
+                    </li>
+                    <li class="L1"><span class="pun">}</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

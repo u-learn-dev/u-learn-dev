@@ -1,34 +1,103 @@
-<div class="text-viewer--scroll-container--1iy0Z">
-<div class="text-viewer--content--3hoqQ">
-<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">ნაბიჯი 8 - შეადარეთ მომხმარებლის პასუხი Game Sequence8-ს.</div>
-<div class="article-asset--container--3djM8">
-<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p>უკვე, მგონი ღირს იმის ნახვა როგორ მუშაობს Simon game-ი.</p>
-<p>პირველ რიგში, თამაში გვიჩვენებს პირველ ფერს მიმდევრობაში (ლურჯი). მომხმარებელი აქლიქებს ლურჯ ბათონზე.</p>
-<p>შემდეგ, თამაში გვიჩვენებს შემდეგ ფერს (წითელი), მომხმარებელმა უნდა დაიმახსოვროს რომ მიმდევრობა არის ლურჯი, წითელი და ასე შემდეგ და ასე შემდეგ.</p>
-<p>თუ მომხმარებელს აერევა თანმიმდევრობა, მაშინ თამაში დასრულდება.</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_12-47-22-8bcfca3d023a952c07c651c8dd7714bd.gif" align="middle" /></figure>
-<p>თქვენ შეგიძლიათ თქვენით სცადოთ კოდის დაწერა და გაიგოთ თუ როგორ უნდა მიაღწიოთ ამ ლოგიკას ან შეგიძლიათ მიჰყვეთ ქვემოთ მოცემულ გამოწვევის ნაბიჯებს:</p>
-<p>1. შექმენით ახალი ფუნქცია სახელად,  <code>checkAnswer()</code>, რომელმაც უნდა მიიღოს ერთი უნფუთი სახელად <code>currentLevel</code></p>
-<p>2. გამოიძახეთ <code>checkAnswer() </code>იმის შემდეგ რაც მომხმარებელი დააქლიქებს და აირჩევს თავის პასუხს, და გადაეცემა <strong>ბოლო პასუხის ინდექსი</strong> მომხმარებლის თანმიმდევრობაში.</p>
-<p>მაგალითად, თუ მომხმარებელი დააქლიქებს <strong>red, green, red, yellow,</strong>-ს  ბოლო პასუხის ინდექსი არის <strong>3.</strong></p>
-<p>3. დაწერეთ <strong>if statement</strong><code>checkAnswer()</code>-ის შიგნით, რატა შეამოწმოთ ბოლო მომხმარებლის პასუხი თუ შეესაბამება თამაშის ნიმუშს. თუ კი, მაშინ <strong>log</strong> "<code>success</code>", თუ არა და <strong>log</strong> "<code>wrong</code>".</p>
-<p> თქვენ ახლა შეგიძლიათ გამოიყენოთ ეს ლოგ-ის წესები <code>userClickedPattern</code> და <code>gamePattern</code> ის ველიუების შესვლასთან ერთად და <strong>ქრომის დეველოპერის თულსის</strong> კონსოლში რათა შეამოწმოთ მუშაობს თუ არა თქვენი კოდი ისე როგორც ელოდებოდით და გაუკეთეთ  <strong>debug-ი </strong> თქვენს  კოდს, როგორც დაგჭირდებათ. როდესაც დააასრულებთ, თავისუფლად შეგიძლიათ ეს ლოგის წესები მოაშოროთ.</p>
-<p>4. თუ მომხმარებელმა შეიყვანა ყველაზე ბოლო პასუხი <strong> სწორად </strong> მესამე საფეხურზე, მაშინ შეამოწმეთ თუ დაასრულეს თავიიანთი მიმდევრობა კიდევ ერთი if statement-ით.</p>
-<p>5. გამოიძახეთ <code>nextSequence()</code>  <strong>1000 მილიწამი</strong> დაგვიანების შემდეგ.</p>
-<p>6. როდესაც <code>nextSequence()</code> გამოიძახება, დაარესეთეთ <code>userClickedPattern</code>  <strong>ცარიელი array-ით </strong>რათა, შემდეგი დონისთვის მზად იყოს.</p>
-<p>&nbsp;</p>
-<p>ახლა უნდა შეგეძლოთ თამაში.</p>
-<figure><img src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_13-02-31-ac4fa16ac321cb9133eef978b1d1937b.gif" align="middle" /></figure>
-<p>&nbsp;</p>
-<p>მომდევნო რამოდენიმე გამოწვევებში, ჩვენ განვიხილავთ თუ რა ხდება როდესაც მომხმარბელი არასწპრად გამოიცნობს ნიმუშს და როოგორ დარესეტდება თამაში.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-</div>
-</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            ნაბიჯი 8 - შეადარეთ მომხმარებლის პასუხი Game Sequence8-ს.
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <p>უკვე, მგონი ღირს იმის ნახვა როგორ მუშაობს Simon game-ი.</p>
+              <p>
+                პირველ რიგში, თამაში გვიჩვენებს პირველ ფერს მიმდევრობაში (ლურჯი). მომხმარებელი აქლიქებს ლურჯ
+                ბათონზე.
+              </p>
+              <p>
+                შემდეგ, თამაში გვიჩვენებს შემდეგ ფერს (წითელი), მომხმარებელმა უნდა დაიმახსოვროს რომ მიმდევრობა
+                არის ლურჯი, წითელი და ასე შემდეგ და ასე შემდეგ.
+              </p>
+              <p>თუ მომხმარებელს აერევა თანმიმდევრობა, მაშინ თამაში დასრულდება.</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_12-47-22-8bcfca3d023a952c07c651c8dd7714bd.gif"
+                  align="middle"
+                />
+              </figure>
+              <p>
+                თქვენ შეგიძლიათ თქვენით სცადოთ კოდის დაწერა და გაიგოთ თუ როგორ უნდა მიაღწიოთ ამ ლოგიკას ან
+                შეგიძლიათ მიჰყვეთ ქვემოთ მოცემულ გამოწვევის ნაბიჯებს:
+              </p>
+              <p>
+                1. შექმენით ახალი ფუნქცია სახელად, <code>checkAnswer()</code>, რომელმაც უნდა მიიღოს ერთი
+                უნფუთი სახელად <code>currentLevel</code>
+              </p>
+              <p>
+                2. გამოიძახეთ <code>checkAnswer() </code>იმის შემდეგ რაც მომხმარებელი დააქლიქებს და აირჩევს
+                თავის პასუხს, და გადაეცემა <strong>ბოლო პასუხის ინდექსი</strong> მომხმარებლის თანმიმდევრობაში.
+              </p>
+              <p>
+                მაგალითად, თუ მომხმარებელი დააქლიქებს <strong>red, green, red, yellow,</strong>-ს ბოლო პასუხის
+                ინდექსი არის <strong>3.</strong>
+              </p>
+              <p>
+                3. დაწერეთ <strong>if statement</strong><code>checkAnswer()</code>-ის შიგნით, რატა შეამოწმოთ
+                ბოლო მომხმარებლის პასუხი თუ შეესაბამება თამაშის ნიმუშს. თუ კი, მაშინ
+                <strong>log</strong> "<code>success</code>", თუ არა და
+                <strong>log</strong> "<code>wrong</code>".
+              </p>
+              <p>
+                თქვენ ახლა შეგიძლიათ გამოიყენოთ ეს ლოგ-ის წესები <code>userClickedPattern</code> და
+                <code>gamePattern</code> ის ველიუების შესვლასთან ერთად და
+                <strong>ქრომის დეველოპერის თულსის</strong> კონსოლში რათა შეამოწმოთ მუშაობს თუ არა თქვენი კოდი
+                ისე როგორც ელოდებოდით და გაუკეთეთ <strong>debug-ი </strong> თქვენს კოდს, როგორც დაგჭირდებათ.
+                როდესაც დააასრულებთ, თავისუფლად შეგიძლიათ ეს ლოგის წესები მოაშოროთ.
+              </p>
+              <p>
+                4. თუ მომხმარებელმა შეიყვანა ყველაზე ბოლო პასუხი <strong> სწორად </strong> მესამე საფეხურზე,
+                მაშინ შეამოწმეთ თუ დაასრულეს თავიიანთი მიმდევრობა კიდევ ერთი if statement-ით.
+              </p>
+              <p>
+                5. გამოიძახეთ <code>nextSequence()</code> <strong>1000 მილიწამი</strong> დაგვიანების შემდეგ.
+              </p>
+              <p>
+                6. როდესაც <code>nextSequence()</code> გამოიძახება, დაარესეთეთ
+                <code>userClickedPattern</code> <strong>ცარიელი array-ით </strong>რათა, შემდეგი დონისთვის მზად
+                იყოს.
+              </p>
+              <p>&nbsp;</p>
+              <p>ახლა უნდა შეგეძლოთ თამაში.</p>
+              <figure>
+                <img
+                  src="https://img-c.udemycdn.com/redactor/raw/2018-11-22_13-02-31-ac4fa16ac321cb9133eef978b1d1937b.gif"
+                  align="middle"
+                />
+              </figure>
+              <p>&nbsp;</p>
+              <p>
+                მომდევნო რამოდენიმე გამოწვევებში, ჩვენ განვიხილავთ თუ რა ხდება როდესაც მომხმარბელი არასწპრად
+                გამოიცნობს ნიმუშს და როოგორ დარესეტდება თამაში.
+              </p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

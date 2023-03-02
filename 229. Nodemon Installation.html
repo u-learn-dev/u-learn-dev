@@ -1,72 +1,242 @@
-<div class="text-viewer--scroll-container--1iy0Z">
-<div class="text-viewer--content--3hoqQ">
-<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">Nodemon-ის ინსტალაცია</div>
-<div class="article-asset--container--3djM8">
-<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p><strong>თუ პრობლემებს წააწყდებით nodemon-თან შემდეგ გაკვეთილზე, დაბრუნდით და სცადეთ ეს გამოსავალი გზები.</strong></p>
-<p>&nbsp;</p>
-<p>გამარჯობათ მეგობრებო,</p>
-<p>შემდეგ გაკვეთილზე, მე აგიხსნით თუ როგორ უნდა დააინსტალიროთ&nbsp;<strong>nodemon, რომელიც არის</strong> npm package, რომელიც უფრო გაგვიადვილებს ჩვენი სერვერების ავტომატურად დასტარტვას.</p>
-<p><strong> nodemon-ის ინსტალაციის პრობლემები</strong></p>
-<p>შემდეგ გაკვეთილზე, განახებთ ოფიციალურ საინსტალაციო გვერდს nodemon-ისგან, მაგრამ დაგჭირდებათ ადმინის უფლებები რათა თქვენს სისტემაზე დაინსტალირდეს.</p>
-<p>ასე რომ, როდესაც ეს ბრძანება არ მუშაობს:</p>
-<div class="ud-component--base-components--code-block">
-<div>
-<ol class="linenums">
-<li class="L0"><span class="pln">npm install </span><span class="pun">-</span><span class="pln">g nodemon</span></li>
-</ol>
-</div>
-</div>
-<p>გირჩევთ ამის გამოყენებას, მის ნაცვლად:</p>
-<div class="ud-component--base-components--code-block">
-<div>
-<ol class="linenums">
-<li class="L0"><span class="pln">sudo npm install </span><span class="pun">-</span><span class="pln">g nodemon</span></li>
-</ol>
-</div>
-</div>
-<p>ის შემდეგ მოგთხოვთ რომ პაროლი შეიყვანოთ, რომელსაც კომპიუტერში შესვლის დროს იყენებთ.</p>
-<p>ასე რომ ამ ეტაპზე თუ რაიმე პრობლემა გაქვთ.</p>
-<p>1. დარწმუნდით რომ კომპიუტერში ადმინის პრივილეგიების მქომე account-ით ხართ შესულნი.</p>
-<p>2. გამოიყენეთ sudo საინსტალაციო ბრძანების წინ.</p>
-<p>3. როდესაც მოგთხოვთ პაროლი შეიყვანეთ. შენიშნავთ რომ პაროლს როდესაც წერთ, ის არ ჩანს. უბრალოდ ენთერს დააჭირეთ როდესაც მთლიანად ჩაწერთ მას.</p>
-<p>&nbsp;</p>
-<p><strong>nodemon-ის დარანვის პრობლემები.</strong></p>
-<p>თუ დაინსტალირების შემდეგ, nodemon-ის გამოყენებას როდესაც ცდით, თქვენ იღებთ ასეთ ერორებს როგორც დაბლაა მოცემული:</p>
-<div class="ud-component--base-components--code-block">
-<div>
-<ol class="linenums">
-<li class="L0"><span class="str">/home/</span><span class="pln">user</span><span class="pun">/</span><span class="pln">projects</span><span class="pun">/</span><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span><span class="pun">/</span><span class="pln">node_modules</span><span class="pun">/</span><span class="pln">nodemon</span><span class="pun">/</span><span class="pln">lib</span><span class="pun">/</span><span class="pln">monitor</span><span class="pun">/</span><span class="pln">run</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">336</span></li>
-<li class="L1"><span class="pln">spawn</span><span class="pun">(</span><span class="str">'kill'</span><span class="pun">,</span> <span class="pun">[</span><span class="str">'-s'</span><span class="pun">,</span><span class="pln"> sig</span><span class="pun">,</span><span class="pln"> child</span><span class="pun">.</span><span class="pln">pid</span><span class="pun">].</span><span class="pln">concat</span><span class="pun">(</span><span class="pln">kids</span><span class="pun">.</span><span class="pln">map</span><span class="pun">(</span><span class="pln">p </span><span class="pun">=&gt;</span><span class="pln"> p</span><span class="pun">.</span><span class="pln">PID</span><span class="pun">)))</span></li>
-<li class="L2"><span class="pun">^</span></li>
-<li class="L3"><span class="typ">TypeError</span><span class="pun">:</span> <span class="typ">Cannot</span><span class="pln"> read </span><span class="kwd">property</span> <span class="str">'map'</span><span class="pln"> of </span><span class="kwd">undefined</span></li>
-<li class="L4"><span class="pln">at </span><span class="pun">/</span><span class="pln">home</span><span class="pun">/</span><span class="pln">user</span><span class="pun">/</span><span class="pln">projects</span><span class="pun">/</span><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span><span class="pun">/</span><span class="pln">node_modules</span><span class="pun">/</span><span class="pln">nodemon</span><span class="pun">/</span><span class="pln">lib</span><span class="pun">/</span><span class="pln">monitor</span><span class="pun">/</span><span class="pln">run</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">336</span><span class="pun">:</span><span class="lit">58</span></li>
-<li class="L5"><span class="pln">at </span><span class="pun">/</span><span class="pln">home</span><span class="pun">/</span><span class="pln">user</span><span class="pun">/</span><span class="pln">projects</span><span class="pun">/</span><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span><span class="pun">/</span><span class="pln">node_modules</span><span class="pun">/</span><span class="pln">pstree</span><span class="pun">.</span><span class="pln">remy</span><span class="pun">/</span><span class="pln">lib</span><span class="pun">/</span><span class="pln">tree</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">53</span><span class="pun">:</span><span class="lit">11</span></li>
-<li class="L6"><span class="pln">at </span><span class="typ">ChildProcess</span><span class="pun">.</span><span class="pln">onClose </span><span class="pun">(</span><span class="str">/home/</span><span class="pln">user</span><span class="pun">/</span><span class="pln">projects</span><span class="pun">/</span><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span><span class="pun">/</span><span class="pln">node_modules</span><span class="pun">/</span><span class="pln">pstree</span><span class="pun">.</span><span class="pln">remy</span><span class="pun">/</span><span class="pln">lib</span><span class="pun">/</span><span class="pln">tree</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">80</span><span class="pun">:</span><span class="lit">9</span><span class="pun">)</span></li>
-<li class="L7"><span class="pln">at </span><span class="typ">ChildProcess</span><span class="pun">.</span><span class="pln">emit </span><span class="pun">(</span><span class="pln">events</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">182</span><span class="pun">:</span><span class="lit">13</span><span class="pun">)</span></li>
-<li class="L8"><span class="pln">at maybeClose </span><span class="pun">(</span><span class="kwd">internal</span><span class="pun">/</span><span class="pln">child_process</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">962</span><span class="pun">:</span><span class="lit">16</span><span class="pun">)</span></li>
-<li class="L9"><span class="pln">at </span><span class="typ">Process</span><span class="pun">.</span><span class="typ">ChildProcess</span><span class="pun">.</span><span class="pln">_handle</span><span class="pun">.</span><span class="pln">onexit </span><span class="pun">(</span><span class="kwd">internal</span><span class="pun">/</span><span class="pln">child_process</span><span class="pun">.</span><span class="pln">js</span><span class="pun">:</span><span class="lit">251</span><span class="pun">:</span><span class="lit">5</span><span class="pun">)</span></li>
-<li class="L0"><span class="pln">npm ERR</span><span class="pun">!</span><span class="pln"> code ELIFECYCLE</span></li>
-<li class="L1"><span class="pln">npm ERR</span><span class="pun">!</span><span class="pln"> errno </span><span class="lit">1</span></li>
-<li class="L2"><span class="pln">npm ERR</span><span class="pun">!</span><span class="pln"> mongodb</span><span class="pun">-</span><span class="pln">todo@1</span><span class="pun">.</span><span class="lit">0.0</span><span class="pln"> start</span><span class="pun">:</span><span class="pln">&nbsp;nodemon</span></li>
-<li class="L3"><span class="pln">npm ERR</span><span class="pun">!</span> <span class="typ">Exit</span><span class="pln"> status </span><span class="lit">1</span></li>
-<li class="L4"><span class="pln">npm ERR</span><span class="pun">!</span></li>
-<li class="L5"><span class="pln">npm ERR</span><span class="pun">!</span> <span class="typ">Failed</span><span class="pln"> at the mongodb</span><span class="pun">-</span><span class="pln">todo@1</span><span class="pun">.</span><span class="lit">0.0</span><span class="pln"> start script</span><span class="pun">.</span></li>
-<li class="L6"><span class="pln">npm ERR</span><span class="pun">!</span> <span class="typ">This</span> <span class="kwd">is</span><span class="pln"> probably </span><span class="kwd">not</span><span class="pln"> a problem </span><span class="kwd">with</span><span class="pln"> npm</span><span class="pun">.</span> <span class="typ">There</span> <span class="kwd">is</span><span class="pln"> likely additional logging output above</span><span class="pun">.</span></li>
-<li class="L7"><span class="pln">npm ERR</span><span class="pun">!</span><span class="pln"> A complete log of </span><span class="kwd">this</span><span class="pln"> run can be found </span><span class="kwd">in</span><span class="pun">:</span></li>
-<li class="L8"><span class="pln">npm ERR</span><span class="pun">!</span> <span class="str">/home/</span><span class="pln">user</span><span class="pun">/.</span><span class="pln">npm</span><span class="pun">/</span><span class="pln">_logs</span><span class="pun">/</span><span class="lit">2018</span><span class="pun">-</span><span class="lit">11</span><span class="pun">-</span><span class="lit">22T12</span><span class="pln">_10_04_952Z</span><span class="pun">-</span><span class="pln">debug</span><span class="pun">.</span><span class="pln">log</span></li>
-</ol>
-</div>
-</div>
-<p>ამეებს თავიდან მოიშორებთ ამ ბრძანების ჩაწერის შემდეგ:</p>
-<p><code>npm i pstree.remy@1.1.0 -D</code></p>
-<p>&nbsp;</p>
-<p>პრობლემა აქ არის დოკუმენტირებული:</p>
-<p><a href="https://github.com/remy/nodemon/issues/1459" target="_blank" rel="noopener noreferrer">https://github.com/remy/nodemon/issues/1459</a></p>
-<p>&nbsp;</p>
-<p>საუკეთესო სურვილებით,</p>
-<p>თქვენი ინსტრუქტორი, ანჯელა</p>
-</div>
-</div>
-</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">Nodemon-ის ინსტალაცია</div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <p>
+                <strong
+                  >თუ პრობლემებს წააწყდებით nodemon-თან შემდეგ გაკვეთილზე, დაბრუნდით და სცადეთ ეს გამოსავალი
+                  გზები.</strong
+                >
+              </p>
+              <p>&nbsp;</p>
+              <p>გამარჯობათ მეგობრებო,</p>
+              <p>
+                შემდეგ გაკვეთილზე, მე აგიხსნით თუ როგორ უნდა დააინსტალიროთ&nbsp;<strong
+                  >nodemon, რომელიც არის</strong
+                >
+                npm package, რომელიც უფრო გაგვიადვილებს ჩვენი სერვერების ავტომატურად დასტარტვას.
+              </p>
+              <p><strong> nodemon-ის ინსტალაციის პრობლემები</strong></p>
+              <p>
+                შემდეგ გაკვეთილზე, განახებთ ოფიციალურ საინსტალაციო გვერდს nodemon-ისგან, მაგრამ დაგჭირდებათ
+                ადმინის უფლებები რათა თქვენს სისტემაზე დაინსტალირდეს.
+              </p>
+              <p>ასე რომ, როდესაც ეს ბრძანება არ მუშაობს:</p>
+              <div class="ud-component--base-components--code-block">
+                <div>
+                  <ol class="linenums">
+                    <li class="L0">
+                      <span class="pln">npm install </span><span class="pun">-</span
+                      ><span class="pln">g nodemon</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <p>გირჩევთ ამის გამოყენებას, მის ნაცვლად:</p>
+              <div class="ud-component--base-components--code-block">
+                <div>
+                  <ol class="linenums">
+                    <li class="L0">
+                      <span class="pln">sudo npm install </span><span class="pun">-</span
+                      ><span class="pln">g nodemon</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <p>ის შემდეგ მოგთხოვთ რომ პაროლი შეიყვანოთ, რომელსაც კომპიუტერში შესვლის დროს იყენებთ.</p>
+              <p>ასე რომ ამ ეტაპზე თუ რაიმე პრობლემა გაქვთ.</p>
+              <p>1. დარწმუნდით რომ კომპიუტერში ადმინის პრივილეგიების მქომე account-ით ხართ შესულნი.</p>
+              <p>2. გამოიყენეთ sudo საინსტალაციო ბრძანების წინ.</p>
+              <p>
+                3. როდესაც მოგთხოვთ პაროლი შეიყვანეთ. შენიშნავთ რომ პაროლს როდესაც წერთ, ის არ ჩანს. უბრალოდ
+                ენთერს დააჭირეთ როდესაც მთლიანად ჩაწერთ მას.
+              </p>
+              <p>&nbsp;</p>
+              <p><strong>nodemon-ის დარანვის პრობლემები.</strong></p>
+              <p>
+                თუ დაინსტალირების შემდეგ, nodemon-ის გამოყენებას როდესაც ცდით, თქვენ იღებთ ასეთ ერორებს როგორც
+                დაბლაა მოცემული:
+              </p>
+              <div class="ud-component--base-components--code-block">
+                <div>
+                  <ol class="linenums">
+                    <li class="L0">
+                      <span class="str">/home/</span><span class="pln">user</span><span class="pun">/</span
+                      ><span class="pln">projects</span><span class="pun">/</span
+                      ><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span
+                      ><span class="pun">/</span><span class="pln">node_modules</span
+                      ><span class="pun">/</span><span class="pln">nodemon</span><span class="pun">/</span
+                      ><span class="pln">lib</span><span class="pun">/</span><span class="pln">monitor</span
+                      ><span class="pun">/</span><span class="pln">run</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">336</span>
+                    </li>
+                    <li class="L1">
+                      <span class="pln">spawn</span><span class="pun">(</span><span class="str">'kill'</span
+                      ><span class="pun">,</span> <span class="pun">[</span><span class="str">'-s'</span
+                      ><span class="pun">,</span><span class="pln"> sig</span><span class="pun">,</span
+                      ><span class="pln"> child</span><span class="pun">.</span><span class="pln">pid</span
+                      ><span class="pun">].</span><span class="pln">concat</span><span class="pun">(</span
+                      ><span class="pln">kids</span><span class="pun">.</span><span class="pln">map</span
+                      ><span class="pun">(</span><span class="pln">p </span><span class="pun">=&gt;</span
+                      ><span class="pln"> p</span><span class="pun">.</span><span class="pln">PID</span
+                      ><span class="pun">)))</span>
+                    </li>
+                    <li class="L2"><span class="pun">^</span></li>
+                    <li class="L3">
+                      <span class="typ">TypeError</span><span class="pun">:</span>
+                      <span class="typ">Cannot</span><span class="pln"> read </span
+                      ><span class="kwd">property</span> <span class="str">'map'</span
+                      ><span class="pln"> of </span><span class="kwd">undefined</span>
+                    </li>
+                    <li class="L4">
+                      <span class="pln">at </span><span class="pun">/</span><span class="pln">home</span
+                      ><span class="pun">/</span><span class="pln">user</span><span class="pun">/</span
+                      ><span class="pln">projects</span><span class="pun">/</span
+                      ><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span
+                      ><span class="pun">/</span><span class="pln">node_modules</span
+                      ><span class="pun">/</span><span class="pln">nodemon</span><span class="pun">/</span
+                      ><span class="pln">lib</span><span class="pun">/</span><span class="pln">monitor</span
+                      ><span class="pun">/</span><span class="pln">run</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">336</span
+                      ><span class="pun">:</span><span class="lit">58</span>
+                    </li>
+                    <li class="L5">
+                      <span class="pln">at </span><span class="pun">/</span><span class="pln">home</span
+                      ><span class="pun">/</span><span class="pln">user</span><span class="pun">/</span
+                      ><span class="pln">projects</span><span class="pun">/</span
+                      ><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span
+                      ><span class="pun">/</span><span class="pln">node_modules</span
+                      ><span class="pun">/</span><span class="pln">pstree</span><span class="pun">.</span
+                      ><span class="pln">remy</span><span class="pun">/</span><span class="pln">lib</span
+                      ><span class="pun">/</span><span class="pln">tree</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">53</span
+                      ><span class="pun">:</span><span class="lit">11</span>
+                    </li>
+                    <li class="L6">
+                      <span class="pln">at </span><span class="typ">ChildProcess</span
+                      ><span class="pun">.</span><span class="pln">onClose </span><span class="pun">(</span
+                      ><span class="str">/home/</span><span class="pln">user</span><span class="pun">/</span
+                      ><span class="pln">projects</span><span class="pun">/</span
+                      ><span class="pln">mongodb</span><span class="pun">-</span><span class="pln">todo</span
+                      ><span class="pun">/</span><span class="pln">node_modules</span
+                      ><span class="pun">/</span><span class="pln">pstree</span><span class="pun">.</span
+                      ><span class="pln">remy</span><span class="pun">/</span><span class="pln">lib</span
+                      ><span class="pun">/</span><span class="pln">tree</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">80</span
+                      ><span class="pun">:</span><span class="lit">9</span><span class="pun">)</span>
+                    </li>
+                    <li class="L7">
+                      <span class="pln">at </span><span class="typ">ChildProcess</span
+                      ><span class="pun">.</span><span class="pln">emit </span><span class="pun">(</span
+                      ><span class="pln">events</span><span class="pun">.</span><span class="pln">js</span
+                      ><span class="pun">:</span><span class="lit">182</span><span class="pun">:</span
+                      ><span class="lit">13</span><span class="pun">)</span>
+                    </li>
+                    <li class="L8">
+                      <span class="pln">at maybeClose </span><span class="pun">(</span
+                      ><span class="kwd">internal</span><span class="pun">/</span
+                      ><span class="pln">child_process</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">962</span
+                      ><span class="pun">:</span><span class="lit">16</span><span class="pun">)</span>
+                    </li>
+                    <li class="L9">
+                      <span class="pln">at </span><span class="typ">Process</span><span class="pun">.</span
+                      ><span class="typ">ChildProcess</span><span class="pun">.</span
+                      ><span class="pln">_handle</span><span class="pun">.</span
+                      ><span class="pln">onexit </span><span class="pun">(</span
+                      ><span class="kwd">internal</span><span class="pun">/</span
+                      ><span class="pln">child_process</span><span class="pun">.</span
+                      ><span class="pln">js</span><span class="pun">:</span><span class="lit">251</span
+                      ><span class="pun">:</span><span class="lit">5</span><span class="pun">)</span>
+                    </li>
+                    <li class="L0">
+                      <span class="pln">npm ERR</span><span class="pun">!</span
+                      ><span class="pln"> code ELIFECYCLE</span>
+                    </li>
+                    <li class="L1">
+                      <span class="pln">npm ERR</span><span class="pun">!</span
+                      ><span class="pln"> errno </span><span class="lit">1</span>
+                    </li>
+                    <li class="L2">
+                      <span class="pln">npm ERR</span><span class="pun">!</span
+                      ><span class="pln"> mongodb</span><span class="pun">-</span
+                      ><span class="pln">todo@1</span><span class="pun">.</span><span class="lit">0.0</span
+                      ><span class="pln"> start</span><span class="pun">:</span
+                      ><span class="pln">&nbsp;nodemon</span>
+                    </li>
+                    <li class="L3">
+                      <span class="pln">npm ERR</span><span class="pun">!</span> <span class="typ">Exit</span
+                      ><span class="pln"> status </span><span class="lit">1</span>
+                    </li>
+                    <li class="L4"><span class="pln">npm ERR</span><span class="pun">!</span></li>
+                    <li class="L5">
+                      <span class="pln">npm ERR</span><span class="pun">!</span>
+                      <span class="typ">Failed</span><span class="pln"> at the mongodb</span
+                      ><span class="pun">-</span><span class="pln">todo@1</span><span class="pun">.</span
+                      ><span class="lit">0.0</span><span class="pln"> start script</span
+                      ><span class="pun">.</span>
+                    </li>
+                    <li class="L6">
+                      <span class="pln">npm ERR</span><span class="pun">!</span>
+                      <span class="typ">This</span> <span class="kwd">is</span
+                      ><span class="pln"> probably </span><span class="kwd">not</span
+                      ><span class="pln"> a problem </span><span class="kwd">with</span
+                      ><span class="pln"> npm</span><span class="pun">.</span> <span class="typ">There</span>
+                      <span class="kwd">is</span
+                      ><span class="pln"> likely additional logging output above</span
+                      ><span class="pun">.</span>
+                    </li>
+                    <li class="L7">
+                      <span class="pln">npm ERR</span><span class="pun">!</span
+                      ><span class="pln"> A complete log of </span><span class="kwd">this</span
+                      ><span class="pln"> run can be found </span><span class="kwd">in</span
+                      ><span class="pun">:</span>
+                    </li>
+                    <li class="L8">
+                      <span class="pln">npm ERR</span><span class="pun">!</span>
+                      <span class="str">/home/</span><span class="pln">user</span><span class="pun">/.</span
+                      ><span class="pln">npm</span><span class="pun">/</span><span class="pln">_logs</span
+                      ><span class="pun">/</span><span class="lit">2018</span><span class="pun">-</span
+                      ><span class="lit">11</span><span class="pun">-</span><span class="lit">22T12</span
+                      ><span class="pln">_10_04_952Z</span><span class="pun">-</span
+                      ><span class="pln">debug</span><span class="pun">.</span><span class="pln">log</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <p>ამეებს თავიდან მოიშორებთ ამ ბრძანების ჩაწერის შემდეგ:</p>
+              <p><code>npm i pstree.remy@1.1.0 -D</code></p>
+              <p>&nbsp;</p>
+              <p>პრობლემა აქ არის დოკუმენტირებული:</p>
+              <p>
+                <a
+                  href="https://github.com/remy/nodemon/issues/1459"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://github.com/remy/nodemon/issues/1459</a
+                >
+              </p>
+              <p>&nbsp;</p>
+              <p>საუკეთესო სურვილებით,</p>
+              <p>თქვენი ინსტრუქტორი, ანჯელა</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

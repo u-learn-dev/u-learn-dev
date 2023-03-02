@@ -1,26 +1,93 @@
-<div class="text-viewer--scroll-container--1iy0Z">
-<div class="text-viewer--content--3hoqQ">
-<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">99 ბოთლის გამოწვევის გამოსავალი</div>
-<div class="article-asset--container--3djM8">
-<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
-<p>ეს ერთ-ერთი გზაა, რომლითაც გამოწვევის ამოხსნა შეგეძლოთ, არის while ლუპის გამოყენება. ბევრი გზა არსებობს, მაგრამ თუ დასახულ აუთფუთს მიაღწიეთ - და დაპრინტეთ 99 ლუდის ბოთლის სიმღერის ტექსტი - მაშინ წარმატებაას მიაღწიეთ! თუ განსაკუთრებული გზა აღმოაჩინეთ, აუცილებლად გაგვიზიარეთ დისქორდის სერვერზე.</p>
-<ol class="linenums">
-<li class="L0"><span class="kwd">var</span><span class="pln"> numberOfBottles </span><span class="pun">=</span> <span class="lit">99</span></li>
-<li class="L1"><span class="kwd">while</span> <span class="pun">(</span><span class="pln">numberOfBottles </span><span class="pun">&gt;=</span> <span class="lit">0</span><span class="pun">)</span> <span class="pun">{</span></li>
-<li class="L2"><span class="kwd">var</span><span class="pln"> bottleWord </span><span class="pun">=</span> <span class="str">"bottle"</span><span class="pun">;</span></li>
-<li class="L3"><span class="kwd">if</span> <span class="pun">(</span><span class="pln">numberOfBottles </span><span class="pun">===</span> <span class="lit">1</span><span class="pun">)</span> <span class="pun">{</span></li>
-<li class="L4"><span class="pln"> bottleWord </span><span class="pun">=</span> <span class="str">"bottles"</span><span class="pun">;</span></li>
-<li class="L5"><span class="pun">}</span></li>
-<li class="L6"><span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">numberOfBottles </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span><span class="pln"> bottleWord </span><span class="pun">+</span> <span class="str">" of beer on the wall"</span><span class="pun">);</span></li>
-<li class="L7"><span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">numberOfBottles </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span><span class="pln"> bottleWord </span><span class="pun">+</span> <span class="str">" of beer,"</span><span class="pun">);</span></li>
-<li class="L8"><span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Take one down, pass it around,"</span><span class="pun">);</span></li>
-<li class="L9"><span class="pln"> numberOfBottles</span><span class="pun">--;</span></li>
-<li class="L0"><span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">numberOfBottles </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span><span class="pln"> bottleWord </span><span class="pun">+</span> <span class="str">" of beer on the wall."</span><span class="pun">);</span></li>
-<li class="L1"><span class="pun">}</span></li>
-</ol>
-<div class="ud-component--base-components--code-block">&nbsp;</div>
-<p>თუ უფრო მეტად გინდათ თქვენი თავის გამოწვევა, სცადეთ კოდის შევლა, რათა ინგლისურად უფრო გრამატიკულად სწორი იყოს. საბოლოო აუთფუთი უნდა იყოს "1 <strong>bottle</strong> of beer on the wall" როდესაც <code>numberOfBottles</code> ტოლია <code>1-ის </code> და არა "1 <strong>bottles</strong> of beer on the wall" და როცა <code>numberOfBottles</code> ტოლია <code>0-ის</code>, აუთფუთი შეგიძლიათ გახადოთ "<strong>No more</strong> bottles of beer on the wall" ნაცვლად <strong>0</strong> bottles of beer on the wall" - სა.</p>
-</div>
-</div>
-</div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">99 ბოთლის გამოწვევის გამოსავალი</div>
+          <div class="article-asset--container--3djM8">
+            <div
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+            >
+              <p>
+                ეს ერთ-ერთი გზაა, რომლითაც გამოწვევის ამოხსნა შეგეძლოთ, არის while ლუპის გამოყენება. ბევრი გზა
+                არსებობს, მაგრამ თუ დასახულ აუთფუთს მიაღწიეთ - და დაპრინტეთ 99 ლუდის ბოთლის სიმღერის ტექსტი -
+                მაშინ წარმატებაას მიაღწიეთ! თუ განსაკუთრებული გზა აღმოაჩინეთ, აუცილებლად გაგვიზიარეთ დისქორდის
+                სერვერზე.
+              </p>
+              <ol class="linenums">
+                <li class="L0">
+                  <span class="kwd">var</span><span class="pln"> numberOfBottles </span
+                  ><span class="pun">=</span> <span class="lit">99</span>
+                </li>
+                <li class="L1">
+                  <span class="kwd">while</span> <span class="pun">(</span
+                  ><span class="pln">numberOfBottles </span><span class="pun">&gt;=</span>
+                  <span class="lit">0</span><span class="pun">)</span> <span class="pun">{</span>
+                </li>
+                <li class="L2">
+                  <span class="kwd">var</span><span class="pln"> bottleWord </span><span class="pun">=</span>
+                  <span class="str">"bottle"</span><span class="pun">;</span>
+                </li>
+                <li class="L3">
+                  <span class="kwd">if</span> <span class="pun">(</span
+                  ><span class="pln">numberOfBottles </span><span class="pun">===</span>
+                  <span class="lit">1</span><span class="pun">)</span> <span class="pun">{</span>
+                </li>
+                <li class="L4">
+                  <span class="pln"> bottleWord </span><span class="pun">=</span>
+                  <span class="str">"bottles"</span><span class="pun">;</span>
+                </li>
+                <li class="L5"><span class="pun">}</span></li>
+                <li class="L6">
+                  <span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span
+                  ><span class="pun">(</span><span class="pln">numberOfBottles </span
+                  ><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span
+                  ><span class="pln"> bottleWord </span><span class="pun">+</span>
+                  <span class="str">" of beer on the wall"</span><span class="pun">);</span>
+                </li>
+                <li class="L7">
+                  <span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span
+                  ><span class="pun">(</span><span class="pln">numberOfBottles </span
+                  ><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span
+                  ><span class="pln"> bottleWord </span><span class="pun">+</span>
+                  <span class="str">" of beer,"</span><span class="pun">);</span>
+                </li>
+                <li class="L8">
+                  <span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span
+                  ><span class="pun">(</span><span class="str">"Take one down, pass it around,"</span
+                  ><span class="pun">);</span>
+                </li>
+                <li class="L9"><span class="pln"> numberOfBottles</span><span class="pun">--;</span></li>
+                <li class="L0">
+                  <span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span
+                  ><span class="pun">(</span><span class="pln">numberOfBottles </span
+                  ><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span
+                  ><span class="pln"> bottleWord </span><span class="pun">+</span>
+                  <span class="str">" of beer on the wall."</span><span class="pun">);</span>
+                </li>
+                <li class="L1"><span class="pun">}</span></li>
+              </ol>
+              <div class="ud-component--base-components--code-block">&nbsp;</div>
+              <p>
+                თუ უფრო მეტად გინდათ თქვენი თავის გამოწვევა, სცადეთ კოდის შევლა, რათა ინგლისურად უფრო
+                გრამატიკულად სწორი იყოს. საბოლოო აუთფუთი უნდა იყოს "1 <strong>bottle</strong> of beer on the
+                wall" როდესაც <code>numberOfBottles</code> ტოლია <code>1-ის </code> და არა "1
+                <strong>bottles</strong> of beer on the wall" და როცა <code>numberOfBottles</code> ტოლია
+                <code>0-ის</code>, აუთფუთი შეგიძლიათ გახადოთ "<strong>No more</strong> bottles of beer on the
+                wall" ნაცვლად <strong>0</strong> bottles of beer on the wall" - სა.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
