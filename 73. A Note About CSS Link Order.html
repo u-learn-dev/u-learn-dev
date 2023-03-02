@@ -1,0 +1,68 @@
+<div class="text-viewer--scroll-container--1iy0Z">
+<div class="text-viewer--content--3hoqQ">
+<div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">შენიშნვა CSS ლინკების თანმიმდევრობის შესახებ</div>
+<div class="article-asset--container--3djM8">
+<div class="article-asset--content--1dAQ9 rt-scaffolding" data-purpose="safely-set-inner-html:rich-text-viewer:html">
+<p>გამარჯობათ მეგობრებო,</p>
+<p>პატარა შენიშვნა. თუ აღმოაჩენთ რომ თქვენი პირადად არჩეული სტილები არ მუშოაბს, დარწმუნდით რომ header-ში სწორადაა link თეგების თანმიმდევრობა.</p>
+<p>CSS-ის სტილები აისახება იმის მიხედვით თუ რა თანმიმდევრობით არის ისინი დალინკული თქვენს HTML კოდში.</p>
+<p>თუ გქონდათ ორი stylesheet-ი მაგალითად styles1.css და styles2.css რომელიც ორივე იგივე ელემენტს უკავშირდება მაგალითად.</p>
+<p><strong>styles1.css</strong></p>
+<div class="ud-component--base-components--code-block">
+<div>
+<ol class="linenums">
+<li class="L0"><span class="pln">body </span><span class="pun">{</span></li>
+<li class="L1"><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> red</span><span class="pun">;</span></li>
+<li class="L2"><span class="pun">}</span></li>
+</ol>
+</div>
+</div>
+<p><strong>styles2.css</strong></p>
+<div class="ud-component--base-components--code-block">
+<div>
+<ol class="linenums">
+<li class="L0"><span class="pln">body </span><span class="pun">{</span></li>
+<li class="L1"><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> blue</span><span class="pun">;</span></li>
+<li class="L2"><span class="pun">}</span></li>
+</ol>
+</div>
+</div>
+<p>თუ head სექციის შიგნით ლინკები ამ თანმიმდევრობითაა:</p>
+<div class="ud-component--base-components--code-block">
+<div>
+<ol class="linenums">
+<li class="L0"><span class="tag">&lt;link</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"styles1.css"</span><span class="tag">&gt;</span></li>
+<li class="L1"><span class="tag">&lt;link</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"styles2.css"</span><span class="tag">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>საბოლოო შედეგის ამსახველი გვერდი იქნება <strong>ლურჯი</strong>.</p>
+<p>მაგრამ თუ თქვენ ასე განალაგეთ ლინკები:</p>
+<div class="ud-component--base-components--code-block">
+<div>
+<ol class="linenums">
+<li class="L0"><span class="tag">&lt;link</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"styles2.css"</span><span class="tag">&gt;</span></li>
+<li class="L1"><span class="tag">&lt;link</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"styles1.css"</span><span class="tag">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>საბოლოო შედეგის ამსახველი გვერდი იქნება <strong>წითელი</strong>.</p>
+<p>ორივე სტილი აისახება, მაგრამ პრიორიტეტი ბელო სტილს ენიჭება.</p>
+<p>ამ ლოგიკის მიხედვით, თუ თქვენი სტილები არ ფარავს ბუთსთრეფის სტილებს, თქვენ მხოლოდ გჭირდებათ რომ თქვენი ლინკი გადაიტანოთ ბუთსთრეფ CDN ლინკის შემდეგ:</p>
+<div class="ud-component--base-components--code-block">
+<div>
+<ol class="linenums">
+<li class="L0"><span class="tag">&lt;link</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="tag">&gt;</span></li>
+<li class="L1"><span class="tag">&lt;link</span> <span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span> <span class="atn">href</span><span class="pun">=</span><span class="atv">"css/styles.css"</span><span class="tag">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>ეს ნიშნავს რომ თქვენ პირველად ხსნით ბუთსთრეფ სტილსს და შემდეგ მას გადაფარავთ თქვენი სტილებით.</p>
+<p>CSS-სა და JavaScript-სგან გასნხვავებით, HTML-ის კოდი ზევიდან ქვევით სრულდება, ასე რომ თქვენი კოდის თანმიმდევრობა მნიშვნელოვანია.</p>
+<p>საუკეთესო სურვილებით,</p>
+<p>თქვენი ინსტრუქტორი, ანჯელა</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
