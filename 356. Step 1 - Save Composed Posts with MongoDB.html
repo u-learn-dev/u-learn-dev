@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            ნაბიჯი 1 - შეინახეთ შედგენილი პოსტები MongoDB-ში
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+            >
+              <p>
+                მიზანი: შენ უნდა შეგეძლოს, რომ შეხვიდე compose გვერდზე და დაამატო ახალი პოსტი, რომელიც
+                შეინახება მონაცემთა ბაზაში როგორც დოკუმენტი.
+              </p>
+              <p><br /></p>
+              <p>
+                <img
+                  style="max-width: 1000px"
+                  width="660"
+                  src="https://lh3.googleusercontent.com/kfC8UsaoT6kZPOhAiqmNVBG-ccjhF-_7jE6W9XFOKV6MKvWj9zEcW5nifIMAXoPdshWR7Tbma9fcs3Ho9j-cRhjZFKr1R_TUrjwTzj9yuKzd2r8eXUoxHRVPF57V6Ff9fDLXopyW"
+                  height="287"
+                />
+              </p>
+              <p><br /></p>
+              <p>იმისთვის რომ დარწმუნდე, რომ პოსტი ნამდვილად შედი mongo shell-ში და იპოვე ყველა პოსტი.</p>
+              <p><br /></p>
+              <p>
+                <img
+                  style="max-width: 1000px"
+                  width="660"
+                  src="https://lh5.googleusercontent.com/HxPvFI7ZIBGtwrkD9jC6eXUaNo_esEv6RqDzvMwf0UFRBSWQ52C-RyJZW4bxgyaPZm9DdAxxFweqXAaxiI8tpA7KVXa-dw1Ajf86bkfSpctPDysApV8zWCKOzrLMknbf1LjUNbHm"
+                  height="187"
+                />
+              </p>
+              <p><br /></p>
+              <p>ჩასქროლე მინიშნებისთვის 👇</p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <ul>
+                <li><p>შენ უნდა დააინსტალირო mongoose და require(შემოიტანო) ის შენს app.js</p></li>
+                <li><p>შენ დაგჭირდება რომ დაუკონექტდე მონაცემთა ბაზას სახელად: blogDB</p></li>
+              </ul>
+              <p><br /></p>
+              <p>mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>შენ უნდა შექმნა ახალი postSchema რომელიც შეიცავს title(სათაურს) და content(კონტენტს).</p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>const postSchema = {</p>
+              <p>&nbsp;title: String,</p>
+              <p>&nbsp;content: String</p>
+              <p>};</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    შენ უნდა შექმნა ახალი mongoose model, schema-ს გამოყენებით რათა გააკეთო პოსტების კოლექციის
+                    დეფინიცია.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>const Post = mongoose.model("Post", postSchema);</p>
+              <p><br /></p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    app.post() მეთოდში, შენი /compose როუტისთვის, შენ უნდა შექმნა ახალი პოსტის დოკუმენტი,
+                    mongoose model-ის გამოყენებით.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>&nbsp;const post = new Post ({</p>
+              <p>&nbsp;&nbsp;&nbsp;title: req.body.postTitle,</p>
+              <p>&nbsp;&nbsp;&nbsp;content: req.body.postBody</p>
+              <p>&nbsp;});</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    შენ უნდა შეინახო ეს დოკუმენტი შენს მონაცემთა ბაზაში, პოსტების მასივში შენახვის ნაცვლად.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>post.save()</p>
+              <p><br /></p>
+            </div>
+          </div>
+          <div class="ud-text-xl text-viewer--resources-heading--3wP5x">ამ ლექციის რესურსების სია</div>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://u-learn-dev.github.io/u-learn-dev/Blog-with-Database-Step1-Answer.zip"
+              >Blog-with-Database-Step1-Answer.zip</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--content--3hoqQ">
+          <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+            ნაბიჯი 4 - დაარენდერე სწორი პოსტი, post._id - ის მიხედვით.
+          </div>
+          <div class="article-asset--container--3djM8">
+            <div
+              data-purpose="safely-set-inner-html:rich-text-viewer:html"
+              class="article-asset--content--1dAQ9 rt-scaffolding"
+            >
+              <p>
+                მიზანი: როცა დააკლიკებ Read More-ს, უნდა გაგიშვას post.ejs გვერდზე, სადაც დარენდერდება სწორი
+                პოსტი, post._id-ის მიხედვით.
+              </p>
+              <p>
+                <img
+                  style="max-width: 1000px"
+                  width="660"
+                  src="https://lh6.googleusercontent.com/7xb7S6NpIk0atTFId_Frx-jRO7ap2NMkxw-SXLLiRgAmSyQRkWWa6hnbBoZeBGtxt-MJyFkkpS-feadCJSpIsQFM_h8Q3V3mBeXPyLnLxqDSSFPG5rkkszziYjEiLvVltdhzFUWT"
+                  height="192"
+                />
+              </p>
+              <p>
+                <img
+                  style="max-width: 1000px"
+                  width="660"
+                  src="https://lh4.googleusercontent.com/7N5XK2g5cuu0Ijfaddzd5Dbn4Gp1o42RKglWJBVZHwTC3NmEPZedjM96jrqG11T9uW8o48owWVgdbxaz6Bktrgthq-s3OignhOWNc8otrLHpJ-C-7FWc8na_QRQUGF-duFsxvan7"
+                  height="180"
+                />
+              </p>
+              <p>დასქროლე თუ მინიშნება გჭირდება 👇</p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    home.ejs-ში უნდა შეცვალო anchor tag-ის href, პოსტის სახელის ნაცვლად, პოსტის აიდის
+                    მიხედვით.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>&lt;a href="/posts/&lt;%=post._id%&gt;"&gt;Read More&lt;/a&gt;</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    app.post() მეთოდში, /post route-თვის, შენ უნდა შეცვალო express route პარამეტრი postId-ით.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>app.get("/posts/:postId", function(req, res){</p>
+              <p><br /></p>
+              <p>}</p>
+              <p><br /></p>
+              <ul>
+                <li><p>postId პარამეტრის მნიშვნელობის შესანახად დაგჭირდება კონსტანტა</p></li>
+              </ul>
+              <p><br /></p>
+              <p>const requestedPostId = req.params.postId;</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>
+                    პოსტების კოლექციაში, აიდის მიხედვით პოსტის საპოვნელად, შეგიძლია გამოიყენო findOne()
+                    მეთოდი.
+                  </p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>Post.findOne({_id: requestedPostId}, function(err, post){ }</p>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <p>როცა პოსტს იპოვი მისი title და content შეგიძლია დაარენდერო post.ejs გვერზე.</p>
+                </li>
+              </ul>
+              <p><br /></p>
+              <p>Post.findOne({_id: requestedPostId}, function(err, post){</p>
+              <p>&nbsp;&nbsp;&nbsp;res.render("post", {</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: post.title,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content: post.content</p>
+              <p>&nbsp;&nbsp;&nbsp;});</p>
+              <p>&nbsp;});</p>
+              <p><br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
