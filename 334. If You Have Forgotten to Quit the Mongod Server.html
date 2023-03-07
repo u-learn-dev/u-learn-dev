@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 1000px; padding: 40px; font-family: Dosis">
+      <div class="text-viewer--scroll-container--1iy0Z">
+        <div class="text-viewer--scroll-container--1iy0Z">
+          <div class="text-viewer--content--3hoqQ">
+            <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">
+              თუ დაგავიწყდა Mongod Server-ის გათიშვა
+            </div>
+            <div class="article-asset--container--3djM8">
+              <div
+                data-purpose="safely-set-inner-html:rich-text-viewer:html"
+                class="article-asset--content--1dAQ9 rt-scaffolding"
+              >
+                <p>შეგიძლია დააწვე CTRL +&nbsp;C შენს ტერმინალში რათა გათიშო mongodb-სთან კავშირი.</p>
+                <p><br /></p>
+                <p>
+                  თუ გათიშე Terminal ან Hyper და დაგავიწყდა mongodb-სთან კავშირის გათიშვა,
+                  შესაძლოა შეგხვდეს ეს ერორი:
+                </p>
+                <div class="ud-component--base-components--code-block">
+                  <div>
+                    <pre
+                      class="prettyprint linenums prettyprinted"
+                      role="presentation"
+                      style=""
+                    ><ol class="linenums"><li class="L0"><span class="lit">2018</span><span class="pun">-</span><span class="lit">11</span><span class="pun">-</span><span class="lit">04T16</span><span class="pun">:</span><span class="lit">17</span><span class="pun">:</span><span class="lit">53.473</span><span class="pun">+</span><span class="lit">1300</span><span class="pln"> E STORAGE&nbsp; </span><span class="pun">[</span><span class="pln">initandlisten</span><span class="pun">]</span><span class="pln"> </span><span class="typ">Failed</span><span class="pln"> to </span><span class="kwd">set</span><span class="pln"> up listener</span><span class="pun">:</span><span class="pln"> </span><span class="typ">SocketException</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Address</span><span class="pln"> already </span><span class="kwd">in</span><span class="pln"> </span><span class="kwd">use</span></li><li class="L1"><span class="lit">2018</span><span class="pun">-</span><span class="lit">11</span><span class="pun">-</span><span class="lit">04T16</span><span class="pun">:</span><span class="lit">17</span><span class="pun">:</span><span class="lit">53.474</span><span class="pun">+</span><span class="lit">1300</span><span class="pln"> I CONTROL&nbsp; </span><span class="pun">[</span><span class="pln">initandlisten</span><span class="pun">]</span><span class="pln"> now exiting</span></li><li class="L2"><span class="lit">2018</span><span class="pun">-</span><span class="lit">11</span><span class="pun">-</span><span class="lit">04T16</span><span class="pun">:</span><span class="lit">17</span><span class="pun">:</span><span class="lit">53.474</span><span class="pun">+</span><span class="lit">1300</span><span class="pln"> I CONTROL&nbsp; </span><span class="pun">[</span><span class="pln">initandlisten</span><span class="pun">]</span><span class="pln"> shutting down </span><span class="kwd">with</span><span class="pln"> code</span><span class="pun">:</span><span class="lit">48</span></li></ol></pre>
+                  </div>
+                </div>
+                <p>
+                  ამ შემთხვევაში, მიყევი ამ ნაბიჯებს, რათა გათიშო mongod პროცესი:
+                </p>
+                <p>1. გახსენი ახალი Hyper ტერმინალი</p>
+                <p>2. ჩასვი ეს ბრძანება ტერმინალში:</p>
+                <p><code>sudo pkill -f mongod</code></p>
+                <p>3. შეიყვანე პაროლი რომელსაც შენ მაკში ლოგინისას იყენებ.</p>
+                <p>
+                  4. გახსენი ახალი Hyper ტერმინალი. ახლა კვლავ უნდა შეგეძლოს <code>mongod</code> ბრძანების გაშვება.
+                </p>
+                <p><br /></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
